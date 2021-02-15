@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import login from '../views/login.vue'
 import logout from '../views/logout.vue'
 import entregas from '../views/entregas.vue'
+import productos from '../views/productos.vue'
 
 Vue.use(VueRouter)
 
