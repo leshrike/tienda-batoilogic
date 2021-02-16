@@ -2,9 +2,12 @@
   <div class="form-group container justify-content-center">
     <h1 class="h1">Bienvenido a Batoilogic</h1>
     <div class="mw-5 mh-5">
-    <img src="../assets/favicon.png" class="rounded mx-auto d-block img-fluid">
+      <img
+        src="../assets/favicon.png"
+        class="rounded mx-auto d-block img-fluid"
+      />
     </div>
-<br>
+    <br />
     <h2>Inicia sesión o crea una cuenta nueva</h2>
 
     <ValidationObserver ref="form">
@@ -15,7 +18,7 @@
           name="name"
           mode="lazy"
         >
-        <br>
+          <br />
           <div class="form-group mx-sm-3 mb-2">
             <label for="email">Correo electrónico</label>
             <input
@@ -46,11 +49,15 @@
             />
             <span class="error">{{ error }}</span>
           </div>
-          <br>
+          <br />
         </ValidationProvider>
         <div class="btn-group">
-        <input type="submit" value="Registrarme" class="btn btn-primary btn-sm" />
-        <a href="" class="btn btn-success btn-sm">No tengo cuenta</a>
+          <input
+            type="submit"
+            value="Registrarme"
+            class="btn btn-primary btn-sm"
+          />
+          <a href="" class="btn btn-success btn-sm">No tengo cuenta</a>
         </div>
       </form>
     </ValidationObserver>
