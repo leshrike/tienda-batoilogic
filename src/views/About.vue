@@ -3,7 +3,7 @@
       <div class="row justify-content-center">
         <h1 class="col-12">Descubre BatoiLogic</h1>
         <div class="col-12">
-          <h1 class="col-12">Inserte aquí su video UwU</h1>
+          <h1 class="col-12">De momento este no funciona</h1>
           <video class="w-75" controls>
             <source src="#" type="video/mp4">
             <source src="#" type="video/ogg">
