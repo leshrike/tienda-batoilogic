@@ -1,12 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    
+    <batoinav/> 
+    
+    <router-view />
+    
+    <batoifooter/>
+  
   </div>
 </template>
+
+<script>
+
+import batoifooter from '@/components/batoifooter.vue'
+import batoinav from '@/components/batoinav.vue'
+export default {
+  name: 'App',
+  components: {
+    batoifooter,
+     batoinav
+  }
+}
+
+</script>
 
 <style>
 #app {

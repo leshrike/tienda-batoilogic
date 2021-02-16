@@ -1,19 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
 import login from '../views/login.vue'
 import logout from '../views/logout.vue'
 import entregas from '../views/entregas.vue'
-import productos from '../views/productos.vue'
+import productos from '@/views/productos.vue'
+
+import home from '@/views/home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect:{
-      name:"login"
-    }
+    name:'home',
+    component:home,
+
   },
   {
     path: '/login',
@@ -61,11 +62,10 @@ const routes = [
       requiresAuth:true
     }
   }
-
 ]
-
 const router = new VueRouter({
-  routes
+  routes,
+  mode:"history"
 })
 
 export default router
