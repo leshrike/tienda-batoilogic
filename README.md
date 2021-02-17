@@ -33,9 +33,9 @@ npm install -S axios
 
 ## Imagenes de la aplicacón
 ### Login:
-![Log In](https://github.com/leshrike/tienda-batoilogic/blob/master/BatoiLogic-Login.png)
+![Log In](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Login.png)
 ### Inicio:
-![Inicio](https://github.com/leshrike/tienda-batoilogic/blob/master/BatoiLogic-Inicio.png)
+![Inicio](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Inicio.png)
 ### Acerca de:
-![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/BatoiLogic-AboutUs.png)
+![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-AboutUs.png)
 
