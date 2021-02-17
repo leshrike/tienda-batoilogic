@@ -4,8 +4,10 @@ import login from '../views/login.vue'
 import logout from '../views/logout.vue'
 import entregas from '../views/entregas.vue'
 import productos from '@/views/productos.vue'
+import carrito from '@/views/Carrito.vue'
 
-import home from '@/views/home.vue'
+import about from '@/views/About.vue'
+import home from '@/views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -48,6 +50,11 @@ const routes = [
     }
   },
   {
+    path:'/carrito',
+    name:'carrito',
+    component:carrito
+  },
+  {
     path:'/logout',
     name:'logout',
     component: logout,
@@ -61,7 +68,13 @@ const routes = [
     meta:{
       requiresAuth:true
     }
-  }
+  },
+  {
+    path: '/about',
+    name:'about',
+    component:about,
+
+  },
 ]
 const router = new VueRouter({
   routes,
