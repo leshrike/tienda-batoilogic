@@ -32,5 +32,5 @@ npm install axios
 ```
 
 ## Imagenes de la aplicacón
-![](https://gyazo.com/f62cbbc1c729c2950cec70a02f361d31){width='100'}
+![About us](https://gyazo.com/f62cbbc1c729c2950cec70a02f361d31){width='100'}
 
