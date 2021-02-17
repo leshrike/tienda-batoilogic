@@ -10,22 +10,22 @@ npm install
 ```
 Esto lo que hará es que se instalen todos los módulos necesarios.
 
-### Librerias adicionales.
+## Librerias adicionales.
 También necesitaremos las siguientes librerías si no hay partes de la aplicación que no funcionaran. 
 
-#### **Libreria de bootstrap**
+### Libreria de bootstrap
 Esta libreria le dara un mejor aspecto a nuestra pagina web.
 ```prolog
 npm install bootstrap
 ```
 
-#### **Libreria de vee-validate**
+### Libreria de vee-validate
 Esta libreria nos permitira validar los formularios.
 ```prolog
 npm install vee-validate
 ```
 
-#### **Libreria de axios**
+### Libreria de axios
 Esta libreria nos dara acceso a nuestro mysql
 ```prolog
 npm install axios
