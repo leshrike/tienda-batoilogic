@@ -26,8 +26,8 @@ ssh -i "id_rsa.pub" ubuntu@ec2-3-87-71-72.compute-1.amazonaws.com
 ```
 ## Páginas + Enlaces
 [www.g01.batoilogic.es](http:www.g01.batoilogic.es)
-[reparto.g01.batoilogic.es](http:reparto.g01.batoilogic.es)
-[backoffice.g01.batoilogic.es](http:backoffice.g01.batoilogic.es)
+  [reparto.g01.batoilogic.es](http:reparto.g01.batoilogic.es)
+  [backoffice.g01.batoilogic.es](http:backoffice.g01.batoilogic.es)
 ## Versiones
 
 ## Aplicación Vue
