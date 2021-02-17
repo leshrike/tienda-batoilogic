@@ -4,6 +4,7 @@ import login from '../views/login.vue'
 import logout from '../views/logout.vue'
 import entregas from '../views/entregas.vue'
 import productos from '@/views/productos.vue'
+import carrito from '@/views/Carrito.vue'
 
 import about from '@/views/About.vue'
 import home from '@/views/Home.vue'
@@ -47,6 +48,11 @@ const routes = [
     meta:{
       guest:true,
     }
+  },
+  {
+    path:'/carrito',
+    name:'carrito',
+    component:carrito
   },
   {
     path:'/logout',

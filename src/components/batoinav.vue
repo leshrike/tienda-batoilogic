@@ -20,7 +20,7 @@
             <a class="nav-link" href="/productos">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">Sobre nosotros</a>
+            <a class="nav-link" href="/about">Acerca de</a>
           </li>
         </ul>
         
