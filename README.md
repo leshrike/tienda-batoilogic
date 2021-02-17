@@ -32,5 +32,5 @@ npm install axios
 ```
 
 ## Imagenes de la aplicacón
-![About us](https://gyazo.com/f62cbbc1c729c2950cec70a02f361d31){width='100'}
+![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/BatoiLogic-AboutUs.png){width='100'}
 
