@@ -19,11 +19,9 @@ Web:
 ssh -i "id_rsa.pub" ubuntu@ec2-3-87-71-72.compute-1.amazonaws.com
 ```
 ### IP publicas
-```
--DNS: 3.87.12.100
--Servidor de aplicaciones:  54.89.160.135
--Servidor web: 3.87.71.72
-```
+- DNS: 3.87.12.100
+- Servidor de aplicaciones:  54.89.160.135
+- Servidor web: 3.87.71.72
 ### Páginas + Enlaces
 [www.g01.batoilogic.es](http:www.g01.batoilogic.es)  
 [reparto.g01.batoilogic.es](http:reparto.g01.batoilogic.es)  
