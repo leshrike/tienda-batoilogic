@@ -1,6 +1,8 @@
 <template>
-    <footer class="bg-dark text-white">
-        <p> Copyright 2021 Batoilogic </p>
+    <footer class="footer-batoi">
+        <div>
+            <p> Copyright 2021 Batoilogic </p>
+        </div>
     </footer>
 </template>
 

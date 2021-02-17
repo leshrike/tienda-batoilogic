@@ -11,9 +11,9 @@
 </template>
 
 <script>
-
 import batoifooter from '@/components/batoifooter.vue'
 import batoinav from '@/components/batoinav.vue'
+
 export default {
   name: 'App',
   components: {

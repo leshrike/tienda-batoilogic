@@ -1,66 +1,68 @@
 <template>
-  <div class="form-group container justify-content-center">
-    <h1 class="h1">Bienvenido a Batoilogic</h1>
-    <div class="mw-5 mh-5">
-      <img
-        src="../assets/favicon.png"
-        class="rounded mx-auto d-block img-fluid"
-      />
+  <div class="body-batoi">
+    <div class="form-group container justify-content-center">
+      <h1 class="h1">Bienvenido a Batoilogic</h1>
+      <div class="mw-5 mh-5">
+        <img
+          src="../assets/favicon.png"
+          class="rounded mx-auto d-block img-fluid"
+        />
+      </div>
+      <br />
+      <h2>Inicia sesión o crea una cuenta nueva</h2>
+
+      <ValidationObserver ref="form">
+        <form @submit.prevent="login" novalidate class="card">
+          <ValidationProvider
+            rules="required|email"
+            v-slot="{ error }"
+            name="name"
+            mode="lazy"
+          >
+            <br />
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="email">Correo electrónico</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                v-model="user.email"
+                placeholder="ejemplo@example.com"
+              />
+              <span class="error">{{ error }}</span>
+            </div>
+          </ValidationProvider>
+
+          <ValidationProvider
+            rules="required"
+            v-slot="{ error }"
+            name="password"
+            mode="lazy"
+          >
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="password">Contraseña</label>
+              <input
+                class="form-control"
+                type="password"
+                name="password"
+                v-model="user.password"
+                placeholder="contraseña"
+              />
+              <span class="error">{{ error }}</span>
+            </div>
+            <br />
+          </ValidationProvider>
+          <div class="btn-group">
+            <input
+              type="submit"
+              value="Registrarme"
+              class="btn btn-primary btn-sm"
+            />
+            <a href="" class="btn btn-success btn-sm">No tengo cuenta</a>
+          </div>
+        </form>
+      </ValidationObserver>
     </div>
-    <br />
-    <h2>Inicia sesión o crea una cuenta nueva</h2>
-
-    <ValidationObserver ref="form">
-      <form @submit.prevent="login" novalidate class="card">
-        <ValidationProvider
-          rules="required|email"
-          v-slot="{ error }"
-          name="name"
-          mode="lazy"
-        >
-          <br />
-          <div class="form-group mx-sm-3 mb-2">
-            <label for="email">Correo electrónico</label>
-            <input
-              class="form-control"
-              type="email"
-              name="email"
-              v-model="user.email"
-              placeholder="ejemplo@example.com"
-            />
-            <span class="error">{{ error }}</span>
-          </div>
-        </ValidationProvider>
-
-        <ValidationProvider
-          rules="required"
-          v-slot="{ error }"
-          name="password"
-          mode="lazy"
-        >
-          <div class="form-group mx-sm-3 mb-2">
-            <label for="password">Contraseña</label>
-            <input
-              class="form-control"
-              type="password"
-              name="password"
-              v-model="user.password"
-              placeholder="contraseña"
-            />
-            <span class="error">{{ error }}</span>
-          </div>
-          <br />
-        </ValidationProvider>
-        <div class="btn-group">
-          <input
-            type="submit"
-            value="Registrarme"
-            class="btn btn-primary btn-sm"
-          />
-          <a href="" class="btn btn-success btn-sm">No tengo cuenta</a>
-        </div>
-      </form>
-    </ValidationObserver>
   </div>
 </template>
 <script>

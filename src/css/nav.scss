@@ -1,0 +1,25 @@
+.nav-batoi{
+    background-color: #181818;
+    .btn-green{
+        background-color: #1DD658;
+    }
+    .btn-blue{
+        background-color: #1D58D6;
+    }
+    .btn-red{
+        background-color: #EF4444;
+    }
+    img{
+        height: 35px;
+        width: 35px;
+    }
+    a{
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        color: white!important;
+        &:hover{
+            color: #939393!important;
+            border-color: white!important;
+        }
+    }
+}
