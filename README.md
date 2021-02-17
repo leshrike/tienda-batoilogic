@@ -16,19 +16,19 @@ También necesitaremos las siguientes librerías si no hay partes de la aplicaci
 ### Libreria de bootstrap
 Esta libreria le dara un mejor aspecto a nuestra pagina web.
 ```prolog
-npm install bootstrap
+vue add bootstrap-cli
 ```
 
 ### Libreria de vee-validate
 Esta libreria nos permitira validar los formularios.
 ```prolog
-npm install vee-validate
+npm install -S vee-validate
 ```
 
 ### Libreria de axios
 Esta libreria nos dara acceso a nuestro mysql
 ```prolog
-npm install axios
+npm install -S axios
 ```
 
 ## Imagenes de la aplicacón
