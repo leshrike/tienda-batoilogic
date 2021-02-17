@@ -13,7 +13,7 @@ Esto lo que hará es que se instalen todos los módulos necesarios.
 ### Librerias adicionales.
 También necesitaremos las siguientes librerías si no hay partes de la aplicación que no funcionaran. 
 ```prolog
-1. npm install bootstrap.
-2. npm install vee-validate.
-3. npm install axios.
+npm install bootstrap.
+npm install vee-validate.
+npm install axios.
 ```
