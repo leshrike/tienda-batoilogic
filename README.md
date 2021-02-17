@@ -5,7 +5,7 @@ Primero tendremos que descargar el repositorio que contiene nuestros archivos.
 
 ## Instalación
 Primero lanzaremos el siguiente comando: 
-```css
+```prolog
 npm install
 ```
 Esto lo que hará es que se instalen todos los módulos necesarios.
