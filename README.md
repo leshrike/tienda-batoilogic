@@ -68,7 +68,7 @@ npm install -S axios
 ![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-AboutUs.png)
 ### Versiones
 La versión utilizada es:
-```prolog
+```yaml
 2.6.12
 ```
 ![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Version.png)
