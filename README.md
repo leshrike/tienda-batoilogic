@@ -26,9 +26,6 @@ ssh -i "id_rsa.pub" ubuntu@ec2-3-87-71-72.compute-1.amazonaws.com
 [www.g01.batoilogic.es](http:www.g01.batoilogic.es)  
 [reparto.g01.batoilogic.es](http:reparto.g01.batoilogic.es)  
 [backoffice.g01.batoilogic.es](http:backoffice.g01.batoilogic.es)  
-### Versiones
-
-### Servidores funcionando
 
 ## Aplicación Vue
 ### Descargar
@@ -69,3 +66,4 @@ npm install -S axios
 ![Inicio](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Inicio.png)
 #### Acerca de:
 ![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-AboutUs.png)
+### Versiones
