@@ -1,0 +1,16 @@
+.table-batoi thead tr {
+  background-color: #181818;
+}
+.table-batoi thead tr th {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.table-batoi tbody tr {
+  background-color: white;
+}
+.table-batoi tbody tr td {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #181818;
+}

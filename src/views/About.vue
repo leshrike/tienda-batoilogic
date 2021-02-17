@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about body-batoi">
       <div class="row justify-content-center">
         <h1 class="col-12">Descubre BatoiLogic</h1>
         <div class="col-12">

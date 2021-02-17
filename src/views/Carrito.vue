@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body-batoi">
         Bienvenido a tu carrito de compra
     </div>
 </template>

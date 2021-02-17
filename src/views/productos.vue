@@ -1,9 +1,9 @@
 <template>
-  <div class="row">
+  <div class="row body-batoi">
     <div class="col-12">
       <h1>Listado de productos</h1>
-      <table class="table table-striped table-hover col-12">
-        <thead class="thead-dark bg-primary">
+      <table class="table table-striped table-hover col-12 table-batoi">
+        <thead class="bg-primary">
           <tr>
             <th>Id</th>
             <th>Nombre</th>

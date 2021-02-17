@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about body-batoi">
       <div class="row justify-content-center">
         <h1 class="col-12"> BIENVENIDO A BATOILOGIC </h1>
         <div class="w-75 pt-4">    
