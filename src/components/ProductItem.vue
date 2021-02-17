@@ -29,7 +29,7 @@ export default {
     },
     addToCart() {
         this.$store.dispatch('addToCart', this.product)
-        if (alert('Quieres ver el carrito?')) {
+        if (confirm('Quieres ver el carrito?')) {
             this.goTo('/carrito');
         }
     },
