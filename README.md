@@ -67,3 +67,4 @@ npm install -S axios
 #### Acerca de:
 ![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-AboutUs.png)
 ### Versiones
+![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Version.png)
