@@ -8,7 +8,9 @@ Base de datos:
 ssh -i "ddaw-dns-g01.pem" ubuntu@ec2-54-89-160-135.compute-1.amazonaws.com
 Web:
 ssh -i "ddaw-dns-g01.pem" ubuntu@ec2-3-87-71-72.compute-1.amazonaws.com
-##SSH id_rsa.pub.
+```
+## SSH id_rsa.pub.
+```
 DNS:
 ssh -i "id_rsa.pub" ubuntu@ec2-3-87-12-100.compute-1.amazonaws.com
 Base de datos:
