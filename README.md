@@ -5,8 +5,8 @@ Primero tendremos que descargar el repositorio que contiene nuestros archivos.
 
 ## Instalación
 Primero lanzaremos el siguiente comando: 
-```
-Npm install
+```yaml
+- Npm install
 ```
 Esto lo que hará es que se instalen todos los módulos necesarios.
 
