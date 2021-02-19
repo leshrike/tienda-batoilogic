@@ -95,6 +95,31 @@ Dentro de esta aplicación tendremos diferentes funcionalidades que son exclusiv
     contraseña: 1234
 ```
 
+### Versiones
+La versión utilizada es:
+```yaml
+-vue: 2.11
+-vue-template-compiler: 2.6.12
+-bootstrap: 4.5.2 // bootstrap base
+-bootstrap-vue: 2.17.3 // bootstrap adaptado a VUE JS 
+-sass: 1.26.11
+-sass loader: 10.0.2
+-popper.js: 1.16.1
+-eslint: 6.7.2
+-portal.vue: 2.1.7
+-vuex: 3.4.0
+-vue-router:3.2.0 // redirecciones de VUE
+-core-js 3.6.5 
+-vee-validate: 3.4.5 // validación de formularios
+-axios: 0.21.1 // peticiones AJAX
+```
+Hemos utilizado también la extensión de chrome que nos permite hacer debug de un forma más ágil.
+```
+Vue.js devtools: 5.3.4
+
+```
+![Vue.js devtools](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Version.png)
+
 ### Imagenes de la aplicacón
 #### Login:
 ![Log In](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Login.png)
@@ -102,12 +127,8 @@ Dentro de esta aplicación tendremos diferentes funcionalidades que son exclusiv
 ![Inicio](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Inicio.png)
 #### Acerca de:
 ![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-AboutUs.png)
-### Versiones
-La versión utilizada es:
-```yaml
-2.6.12
-```
-![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Version.png)
+
+
 
 **Nota:** No se muestran todas las capturas de pantalla de todas las vistas debido a que el diseño está para refinar.
 
