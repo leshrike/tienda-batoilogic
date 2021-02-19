@@ -12,11 +12,11 @@ ssh -i "ddaw-dns-g01.pem" ubuntu@ec2-3-87-71-72.compute-1.amazonaws.com
 ### SSH id_rsa.pub.
 ```
 DNS:
-ssh -i "id_rsa.pub" ubuntu@ec2-3-87-12-100.compute-1.amazonaws.com
+ssh batoilogic@ec2-3-87-12-100.compute-1.amazonaws.com // ssh batoilogic@3.87.12.100
 Base de datos:
-ssh -i "id_rsa.pub" ubuntu@ec2-54-89-160-135.compute-1.amazonaws.com
+ssh batoilogic@ec2-54-89-160-135.compute-1.amazonaws.com // ssh batoilogic@54.89.160.135
 Web:
-ssh -i "id_rsa.pub" ubuntu@ec2-3-87-71-72.compute-1.amazonaws.com
+ssh batoilogic@ec2-3-87-71-72.compute-1.amazonaws.com // ssh batoilogic@3.87.71.72
 ```
 ### IP publicas
 - DNS: 3.87.12.100
