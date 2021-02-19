@@ -71,6 +71,30 @@ Esta libreria nos dara acceso a nuestro mysql
 npm install -S axios
 ```
 
+## Usuarios para probar las funcionalidades
+
+
+Dentro de esta aplicación tendremos diferentes funcionalidades que son exclusivas para cada rol usuario. Para probarlas, podremos hacer uso de los siguientes usuarios:
+
+### Usuario Administrador
+
+``` prolog
+
+    usuario: admin
+    email:   admin@batoilogic.com
+    contraseña: 1234
+    
+```
+
+### Usuario Repartidor / Dealer
+
+```prolog
+
+    usuario: dealer
+    email:   dealer@batoilogic.com
+    contraseña: 1234
+```
+
 ### Imagenes de la aplicacón
 #### Login:
 ![Log In](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Login.png)
@@ -84,3 +108,6 @@ La versión utilizada es:
 2.6.12
 ```
 ![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Version.png)
+
+**Nota:** No se muestran todas las capturas de pantalla de todas las vistas debido a que el diseño está para refinar.
+
