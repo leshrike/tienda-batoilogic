@@ -1,4 +1,7 @@
 # Tienda batoilogic
+
+Desde la aplicación de la tienda de batoilogic, los usuarios podrán visionar todos los productos que se encuentran a su disposición, además de poder hacer pedidos, de los mismos pedidos podríamos consultar sus datos. Podremos también consultar la información de contacto de la empresa.
+
 ## Servidores (DDAW)
 ### SSH pem
 ```
