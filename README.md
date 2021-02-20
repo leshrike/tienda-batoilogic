@@ -108,8 +108,8 @@ La versión utilizada es:
 -eslint: 6.7.2
 -portal.vue: 2.1.7
 -vuex: 3.4.0
--vue-router:3.2.0 // redirecciones de VUE
--core-js 3.6.5 
+-vue-router: 3.2.0 // redirecciones de VUE
+-core-js: 3.6.5 
 -vee-validate: 3.4.5 // validación de formularios
 -axios: 0.21.1 // peticiones AJAX
 ```
