@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import login from '../views/login.vue'
 import logout from '../views/logout.vue'
-import entregas from '../views/entregas.vue'
+import perfil from '../views/Perfil.vue'
 import productos from '@/views/productos.vue'
 import carrito from '@/views/Carrito.vue'
 
@@ -27,16 +27,17 @@ const routes = [
     }
   },
   {
-    path:'/perfil',
+    path:'/perfil/:token',
     name:'perfil',
-    component: entregas,
+    component: perfil,
     beforeEnter:(to,from,next)=>{
-        if(!localStorage.token){
-          next(false);
-        }else{
-          next();
-        }
+      if(!localStorage.token){
+        next(false);
+      }else{
+        next();
+      }
     },
+    props: true,
     meta:{
       requiresAuth:true
     }
