@@ -78,7 +78,7 @@ Dentro de esta aplicación tendremos diferentes funcionalidades que son exclusiv
 
 ### Usuario Administrador
 
-``` prolog
+```yaml
 
     usuario: admin
     email:   admin@batoilogic.com
@@ -88,7 +88,7 @@ Dentro de esta aplicación tendremos diferentes funcionalidades que son exclusiv
 
 ### Usuario Repartidor / Dealer
 
-```prolog
+```yaml
 
     usuario: dealer
     email:   dealer@batoilogic.com
