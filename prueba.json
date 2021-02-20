@@ -1,0 +1,89 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "provider_id": 1,
+      "name": "Programador front-end",
+      "description": "LAB",
+      "price": 68,
+      "stock": 24,
+      "active": 1
+    },
+    {
+      "id": 2,
+      "provider_id": 1,
+      "name": "Programador back-end",
+      "description": "LAB",
+      "price": 20,
+      "stock": 45,
+      "active": 0
+    },
+    {
+      "id": 3,
+      "provider_id": 2,
+      "name": "Maquetador web",
+      "description": "FCT",
+      "price": 12,
+      "stock": 54,
+      "active": 0
+    },
+    {
+      "id": 4,
+      "provider_id": 2,
+      "name": "Maquetador web 9000",
+      "description": "SI",
+      "price": 12,
+      "stock": 54,
+      "active": 1
+    }
+  ],
+  "provider": [
+    {
+      "id": 1,
+      "provider_id": 1,
+      "name": "Programador front-end",
+      "description": "LAB",
+      "price": 68,
+      "stock": 24,
+      "active": 1
+    },
+    {
+      "id": 2,
+      "provider_id": 1,
+      "name": "Programador back-end",
+      "description": "LAB",
+      "price": 20,
+      "stock": 45,
+      "active": 0
+    },
+    {
+      "id": 3,
+      "provider_id": 2,
+      "name": "Maquetador web",
+      "description": "FCT",
+      "price": 12,
+      "stock": 54,
+      "active": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "provider_id": 1,
+      "name": "Programador front-end",
+      "description": "LAB",
+      "price": 68,
+      "stock": 24,
+      "active": 1
+    },
+    {
+      "id": 4,
+      "provider_id": 2,
+      "name": "Maquetador web 9000",
+      "description": "SI",
+      "price": 12,
+      "stock": 54,
+      "active": 1
+    }
+  ]
+}

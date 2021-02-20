@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import apiService from "@/apiService";
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
     providers: [],
-    products: [],
+    products: [{}],
     userProd: [],
   },
   getters: {
@@ -32,20 +33,33 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    /*loadProducts(context) {
-      apiService.products.getAll()
+    loadProducts(context) {
+      apiService.products.getAllActive()
       .then((response) => {
         context.commit('loadProducts', response.data)
       })
       .catch((err) => alert(err.message || err))
-    },*/
-    /*addToCart(context) {
-      apiService.userPord.getAll()
-      .then((response) => {
-        context.commit('addToCart', response.data)
+    },
+    addToCart(context, producto) {
+      return new Promise((resolv, reject) => {
+        apiService.orders.create(producto)
+        .then((response) => {
+          context.commit('addToCart', response.data)
+          resolv()
+        })
+        .catch(err => reject(err))
       })
-      .catch((err) => alert(err.message || err))
-    },*/
+    },
+    addCartStock(context, producto) {
+      return new Promise((resolv, reject) => {
+        apiService.orders.modify(producto)
+        .then((response) => {
+          context.commit('addToCart', response.data)
+          resolv()
+        })
+        .catch(err => reject(err))
+      })
+    },
     /*removeFromCart(context) {
       apiService.userPord.getAll()
       .then((response) => {

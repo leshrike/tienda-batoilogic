@@ -1,46 +1,30 @@
 <template>
-  <div class="row body-batoi">
-    <div class="col-12">
-      <h1>Listado de productos</h1>
-      <table class="table table-striped table-hover col-12 table-batoi">
-        <thead class="bg-primary">
-          <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-            <th>Descripcion</th>
-            <th>Precio</th>
-            <th>Stock</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <product-item
-            v-for="producto in productos"
-            :key="producto.id"
-            :producto="producto"
-          ></product-item>
-        </tbody>
-      </table>
-    </div>
+  <div class="body-batoi row">
+    <h1 class="col-12">Listado de Productos en stock</h1>
+    <product-card
+      v-for="producto in products"
+      :key="producto.id"
+      :producto="producto"
+    ></product-card>
   </div>
 </template>
 
 <script>
 
-import ProductItem from "../components/ProductItem";
+import ProductCard from "../components/ProductCard";
 
 export default {
   name: "produts-table",
   components: {
-    ProductItem,
+    ProductCard,
   },
   computed: {
-    produts() {
-      return this.$store.state.produts;
+    products() {
+      return this.$store.state.products;
     },
   },
   mounted() {
-    this.$store.dispatch("loadOfertas", this.empresa);
+    this.$store.dispatch("loadProducts");
   },
 };
 </script>
