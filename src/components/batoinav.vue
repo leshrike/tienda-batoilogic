@@ -25,7 +25,7 @@
         </ul>
       </div>
       <div class="nav-item">
-      <a class="float-left nav-link btn btn-blue" href="/perfil" ><b-icon-person-fill></b-icon-person-fill></a>
+      <a class="float-left nav-link btn btn-blue" href="/perfil/" ><b-icon-person-fill></b-icon-person-fill></a>
       </div>
 
       <div class="nav-item">
@@ -42,5 +42,8 @@
 export default {
     name:"batoinav",
     props:["user"],
+    mounted() {
+      this.$store.dispatch("loadUsers");
+    },
 };
 </script>

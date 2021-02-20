@@ -9,6 +9,9 @@ export default new Vuex.Store({
     providers: [],
     products: [{}],
     userProd: [],
+    users: [],
+    userAuth: [],
+    token: [],
   },
   getters: {
     getProvider: (state) => (id) => {
@@ -17,10 +20,22 @@ export default new Vuex.Store({
     getUserProd: (state) => () => {
       return state.userProd
     },
+    getUser: (state) => (token) => {
+      return state.users.find(user => user.token === Number(token)) || {}
+    },
+    getUserAuth: (state) => () => {
+      return state.userAuth
+    },
   },
   mutations: {
     loadProducts(state, products) {
       state.products = products;
+    },
+    loadUsers(state, users) {
+      state.users = users;
+    },
+    loadToken(state, token) {
+      state.token = token;
     },
     addToCart(state, product) {
       state.userProd.push(product)
@@ -67,6 +82,20 @@ export default new Vuex.Store({
       })
       .catch((err) => alert(err.message || err))
     },*/
+    loadUsers(context) {
+      apiService.users.getAll()
+      .then((response) => {
+        context.commit('loadUsers', response.data)
+      })
+      .catch((err) => alert(err.message || err))
+    },
+    loadByToken(context, token) {
+      apiService.users.getByToken(token)
+      .then((response) => {
+        context.commit('loadToken', response.data)
+      })
+      .catch((err) => alert(err.message || err))
+    },
   },
   modules: {
   }
