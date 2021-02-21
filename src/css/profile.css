@@ -1,0 +1,12 @@
+.profile-batoi div .btn-green {
+  background-color: #1DD658;
+}
+.profile-batoi div a {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: white !important;
+}
+.profile-batoi div a:hover {
+  color: #181818 !important;
+  border-color: #181818 !important;
+}

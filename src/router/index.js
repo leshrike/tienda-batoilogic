@@ -27,7 +27,7 @@ const routes = [
     }
   },
   {
-    path:'/perfil/:token',
+    path:'/perfil',
     name:'perfil',
     component: perfil,
     beforeEnter:(to,from,next)=>{
@@ -37,7 +37,6 @@ const routes = [
         next();
       }
     },
-    props: true,
     meta:{
       requiresAuth:true
     }

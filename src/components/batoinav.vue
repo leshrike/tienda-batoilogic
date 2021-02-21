@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-sm  nav-batoi">
+  <nav class="navbar navbar-expand-sm nav-batoi">
     <a class="navbar-brand" href="/"
       ><img src="@/assets/favicon.png" height="35" width="35"
     /></a>
@@ -26,19 +26,19 @@
     </div>
 
     <div class="nav-item">
-      <a class="float-left nav-link btn btn-blue" href="/perfil"
+      <a class="float-left nav-link btn btn-blue" href="/perfil" v-if="user"
         ><b-icon-person-fill></b-icon-person-fill
       ></a>
     </div>
 
     <div class="nav-item">
-      <a class="float-left nav-link btn-blue" href="/carrito"
+      <a class="float-left nav-link btn-blue" href="/carrito" v-if="user"
         ><b-icon-cart-fill></b-icon-cart-fill
       ></a>
     </div>
 
     <div class="nav-item">
-      <a class="float-left nav-link btn btn-red" href="/logout"
+      <a class="float-left nav-link btn btn-red" href="/logout" v-if="user"
         ><b-icon-box-arrow-left></b-icon-box-arrow-left>Logout</a
       >
     </div>
@@ -54,7 +54,15 @@
 <script>
 export default {
   name: "batoinav",
-  props: ["user"],
+  computed: {
+    user() {
+      if (this.$store.state.userAuth.name) {
+        return this.$store.state.userAuth;
+      }else{
+        return false;
+      }
+    },
+  },
   mounted() {
     this.$store.dispatch("loadUsers");
   },

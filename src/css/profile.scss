@@ -1,0 +1,17 @@
+.profile-batoi{
+    div{
+        .btn-green{
+            background-color: #1DD658;
+        }
+        a{
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            color: white!important;
+            &:hover{
+                color: #181818!important;
+                border-color: #181818!important;
+            }
+        }
+
+    }
+}

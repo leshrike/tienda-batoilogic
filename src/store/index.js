@@ -6,12 +6,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    providers: [],
-    products: [{}],
-    userProd: [],
-    users: [],
-    userAuth: [],
-    token:'',
+    providers: [], //Proveedores de la tienda
+    products: [{}], //Productos de la tienda
+    userProds: [], //Productos del usuario
+    users: [],  //Usuarios de la tienda
+    userAuth: [], //Usuario Autentificado
+    token:'', //Token de usuario autentificado
     
   },
 
@@ -19,8 +19,8 @@ export default new Vuex.Store({
     getProvider: (state) => (id) => {
       return state.providers.find(provider => provider.id === Number(id)) || {}
     },
-    getUserProd: (state) => () => {
-      return state.userProd
+    getUserProds: (state) => () => {
+      return state.userProds
     },
     getUser: (state) => (token) => {
       return state.users.find(user => user.token === Number(token)) || {}
@@ -42,19 +42,17 @@ export default new Vuex.Store({
       state.token = token;
     },
     addToCart(state, product) {
-      state.userProd.push(product)
-      localStorage.userProd.push(product)
+      state.userProds.push(product)
+      localStorage.userProds.push(product)
     },
     removeFromCart(state, id) {
-      const index = state.userProd.findIndex(product => product.id === id)
-      if (index >= 0) state.userProd.splice(index, 1)
-      if (index >= 0) localStorage.userProd.splice(index, 1)
+      const index = state.userProds.findIndex(product => product.id === id)
+      if (index >= 0) state.userProds.splice(index, 1)
+      if (index >= 0) localStorage.userProds.splice(index, 1)
     },
     login(state, token) {
-
       state.token = token;
       localStorage.token = token;
-
     },
   },
   actions: {
