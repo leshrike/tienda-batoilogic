@@ -22,8 +22,8 @@ export default new Vuex.Store({
     getUserProds: (state) => () => {
       return state.userProds
     },
-    getUser: (state) => (token) => {
-      return state.users.find(user => user.token === Number(token)) || {}
+    getUser: (state) => (email) => {
+      return state.users.find(user => user.email === email) || {}
     },
     getUserAuth: (state) => () => {
       return state.userAuth
@@ -104,11 +104,11 @@ export default new Vuex.Store({
       })
       .catch((err) => alert(err.message || err))
     },
-
     login(context, user) {
       apiService.users.login(user)
         .then((response) => {
           context.commit('login', response);
+          context.commit('',user.login);
         })
         .catch((error) => {
           alert(error.message || error.status || error);
