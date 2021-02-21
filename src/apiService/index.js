@@ -22,6 +22,15 @@ const users = {
     create: (item) => axios.post(`${baseURL}/Users`, item),
     modify: (item) => axios.put(`${baseURL}/Users/${item.id}`, item),
     delete: (id) => axios.delete(`${baseURL}/Users/${id}`),
+    login: (item) => new Promise((resolv, reject) => {
+        axios.post(`${baseURL}/login`,item)
+            .then(response => {
+                if (response.data) {
+                    resolv(response.data.token)
+                }
+            })
+            .catch(error => reject(error))
+    }),
 };
 
 export default {

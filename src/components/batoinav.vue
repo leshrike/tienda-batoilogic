@@ -24,16 +24,21 @@
           </li>
         </ul>
       </div>
+      
       <div class="nav-item">
-      <a class="float-left nav-link btn btn-blue" href="/perfil/" ><b-icon-person-fill></b-icon-person-fill></a>
+      <a class="float-left nav-link btn btn-blue" href="/perfil/"><b-icon-person-fill></b-icon-person-fill></a>
+      </div>
+
+       <div class="nav-item">
+      <a class="float-left nav-link btn-blue" href="/carrito"><b-icon-cart-fill></b-icon-cart-fill></a>
       </div>
 
       <div class="nav-item">
-      <a class="float-left nav-link btn btn-red" href="/logout" ><b-icon-box-arrow-left></b-icon-box-arrow-left>Logout</a>
+      <a class="float-left nav-link btn btn-red" href="/logout"><b-icon-box-arrow-left></b-icon-box-arrow-left>Logout</a>
       </div>
 
       <div class="nav-item">
-      <a class="float-left nav-link btn btn-green" href="/login" ><b-icon-box-arrow-right></b-icon-box-arrow-right>Login</a>
+      <a class="float-left nav-link btn btn-green" href="/login"><b-icon-box-arrow-right></b-icon-box-arrow-right>Login</a>
       </div>
     </nav>
 </template>
@@ -45,5 +50,6 @@ export default {
     mounted() {
       this.$store.dispatch("loadUsers");
     },
+    
 };
 </script>

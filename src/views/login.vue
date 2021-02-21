@@ -26,7 +26,7 @@
                 class="form-control"
                 type="email"
                 name="email"
-                v-model="user.email"
+                v-model="user.login"
                 placeholder="ejemplo@example.com"
               />
               <span class="error">{{ error }}</span>

@@ -11,8 +11,10 @@ export default new Vuex.Store({
     userProd: [],
     users: [],
     userAuth: [],
-    token: [],
+    token:'',
+    
   },
+
   getters: {
     getProvider: (state) => (id) => {
       return state.providers.find(provider => provider.id === Number(id)) || {}
@@ -26,6 +28,8 @@ export default new Vuex.Store({
     getUserAuth: (state) => () => {
       return state.userAuth
     },
+
+    isAuthenticated: state => !!state.token,
   },
   mutations: {
     loadProducts(state, products) {
@@ -46,12 +50,18 @@ export default new Vuex.Store({
       if (index >= 0) state.userProd.splice(index, 1)
       if (index >= 0) localStorage.userProd.splice(index, 1)
     },
+    login(state, token) {
+
+      state.token = token;
+      localStorage.token = token;
+
+    },
   },
   actions: {
     loadProducts(context) {
-      apiService.products.getAllActive()
+      apiService.products.getAll()
       .then((response) => {
-        context.commit('loadProducts', response.data)
+        context.commit('loadProducts', response.data.data)
       })
       .catch((err) => alert(err.message || err))
     },
@@ -59,7 +69,7 @@ export default new Vuex.Store({
       return new Promise((resolv, reject) => {
         apiService.orders.create(producto)
         .then((response) => {
-          context.commit('addToCart', response.data)
+          context.commit('addToCart', response.data.data)
           resolv()
         })
         .catch(err => reject(err))
@@ -95,6 +105,16 @@ export default new Vuex.Store({
         context.commit('loadToken', response.data)
       })
       .catch((err) => alert(err.message || err))
+    },
+
+    login(context, user) {
+      apiService.users.login(user)
+        .then((response) => {
+          context.commit('login', response);
+        })
+        .catch((error) => {
+          alert(error.message || error.status || error);
+        })
     },
   },
   modules: {
