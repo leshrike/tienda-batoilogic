@@ -3,10 +3,12 @@
       <div class="row justify-content-center">
         <h1 class="col-12">Descubre BatoiLogic</h1>
         <div class="col-12">
-          <h1 class="col-12">De momento este no funciona</h1>
+          <h1 class="col-12">Video explicativo de Batoilogic</h1>
           <video class="w-75" controls>
-            <source src="#" type="video/mp4">
-            <source src="#" type="video/ogg">
+            <source src="@/assets/batoilogic.mp4" type="video/mp4">
+            <!-- <source src="@/assets/batoilogic.ogv" type="video/ogv"> -->
+            <track src="@/assets/castellano_subtitulos.vtt" kind="subtitles" label="Spanish/Español" src-lang="es" default>
+            <track src="@/assets/ingles_subtitulos.vtt" kind="subtitles" label="English/Inglés" src-lang="en-us">
             Todavia no hay video espere a que este archivo carge. 
           </video>
         </div>
