@@ -126,7 +126,7 @@ Vue.js devtools: 5.3.4
 #### Inicio:
 ![Inicio](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-Inicio.png)
 #### Acerca de:
-![About us](https://github.com/leshrike/tienda-batoilogic/blob/master/imagenes/BatoiLogic-AboutUs.png)
+![About us](https://cdn.discordapp.com/attachments/800737769450242098/813377677360627732/unknown.png)
 #### Productos:
 ![Productos ](https://cdn.discordapp.com/attachments/800737769450242098/813329604201807892/unknown.png)
 
