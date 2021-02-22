@@ -5,8 +5,9 @@
         <div class="col-12">
           <h1 class="col-12">Video explicativo de Batoilogic</h1>
           <video class="w-75" controls>
-            <source src="@/assets/batoilogic.mp4" type="video/mp4">
-            <!-- <source src="@/assets/batoilogic.ogv" type="video/ogv"> -->
+            <source src="@/assets/batoilogic.mp4" type="video/mp4;" codecs="av1.42E01E">
+            <source src="@/assets/batoilogic.webm" type="video/webm;" codecs="theora,vorbis"> 
+            <!-- En teoría ibamos a usar ogv como formato de video pero no funciona correctamente con vue -->
             <track src="@/assets/castellano_subtitulos.vtt" kind="subtitles" label="Spanish/Español" src-lang="es" default>
             <track src="@/assets/ingles_subtitulos.vtt" kind="subtitles" label="English/Inglés" src-lang="en-us">
             Todavia no hay video espere a que este archivo carge. 
