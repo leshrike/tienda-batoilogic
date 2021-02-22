@@ -131,9 +131,6 @@ Vue.js devtools: 5.3.4
 ![Productos ](https://cdn.discordapp.com/attachments/800737769450242098/813329604201807892/unknown.png)
 
 
-
-**Nota:** No se muestran todas las capturas de pantalla de todas las vistas debido a que el diseño está para refinar.
-
 ## ¿Cómo desplegar esta página?
 
 Para desplegar esta aplicación haremos uso de un script bash, el cual encontraremos en el directorio raíz del proyecto.Para ejecutar el despliegue deberemos situarnos en el directorio raíz y deberemos introducir en nuestra consola o terminal el siguiente comando:
